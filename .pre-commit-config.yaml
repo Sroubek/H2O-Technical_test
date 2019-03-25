@@ -1,0 +1,18 @@
+repos:
+-   repo: local
+    hooks:
+    - id: pytest
+      name: pytest
+      language: system
+      entry: pytest
+      pass_filenames: false
+      always_run: true
+      stages: [commit]
+    - id: pycodeStyle
+      name: pycodeStyle
+      entry: pipenv run pycodestyle --show-source --show-pep8 ./src
+      pass_filenames: false
+      language: system
+      always_run: true
+      stages: [commit]
+      types: [python]
