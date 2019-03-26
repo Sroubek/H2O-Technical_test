@@ -3,7 +3,7 @@ tests if parser works correctly
 '''
 import pytest
 import os
-from sgml_parser import parse
+from sgm_parser import parse
 from schemas import attributes, metas, fulltexts
 
 DATA = '../data/test.sgm'
