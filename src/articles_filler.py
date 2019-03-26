@@ -4,7 +4,7 @@ Checks if data is duplicit by comparing
  oldid and newid are same for existing object
 this assume that old and new id is unique combination for every article
 '''
-from sgml_parser import parse
+from sgm_parser import parse
 from schemas import create_article
 import os
 
